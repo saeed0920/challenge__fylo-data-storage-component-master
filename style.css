@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background-image: url(./images/bg-desktop.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  min-width: 100vw;
+  background-size: 100% 50%;
+  background-color: #0c122c;
+}
+
+.section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.section__fylo {
+  padding: 4rem;
+  padding-right: 12rem;
+  border-radius: 1rem;
+  border-top-right-radius: 8rem;
+  background-color: #1d2c67;
+}
+
+.section__fylo__img {
+  width: 90%;
+}
+
+.section__fylo-icons {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 120%;
+}
+
+.section__fylo__icon {
+  border-radius: 1rem;
+  width: 4rem;
+  height: 4rem;
+  background-color: #0c122c;
+  padding: 1rem;
+}
+
+.section__storage {
+  min-width: 55rem;
+  margin-left: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  justify-self: center;
+  padding: 3rem 2rem;
+  border-radius: 1rem;
+  background-color: #1d2c67;
+  position: relative;
+}
+
+.section__storage__header {
+  font-weight: 400;
+  color: #848794;
+  font-size: 1.4rem;
+  padding: 1rem 0;
+}
+
+.section__storage__header span {
+  color: white;
+  font-weight: 700;
+}
+
+.section__storage .span-line {
+  position: relative;
+  width: 100%;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+  height: 1rem;
+  border-radius: 10rem;
+  background-color: #151e49;
+}
+
+.section__storage .span-line::after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  border-radius: 100rem;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ffa399), to(#ff4d97));
+  background-image: linear-gradient(to right, #ffa399, #ff4d97);
+}
+
+.section__storage .span-line::before {
+  content: "";
+  position: absolute;
+  width: 0.8rem;
+  top: 10%;
+  -webkit-box-shadow: 0 0.2rem 0rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0.2rem 0rem rgba(0, 0, 0, 0.15);
+  height: 0.8rem;
+  border-radius: 50%;
+  background-color: white;
+  right: 20.5%;
+  z-index: 2;
+}
+
+.section__storage__text {
+  padding: 1rem 0;
+  width: 100%;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section__storage__massage {
+  padding: 1.5rem 0.5rem;
+  background-color: #ffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 30%;
+  border-radius: 1rem;
+  position: absolute;
+  top: -36%;
+  right: 2rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section__storage__massage > :first-child {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.section__storage__massage > :last-child {
+  font-size: 1.4rem;
+  color: #848794;
+}
+
+.section__storage__massage::after {
+  content: "";
+  position: absolute;
+  bottom: -2rem;
+  right: 0;
+  border-width: 2rem;
+  border-style: solid;
+  border-color: transparent #fff transparent transparent;
+}
+
+@media only screen and (max-width: 61em) {
+  html {
+    font-size: 58%;
+  }
+  body {
+    background-image: url(./images/bg-mobile.png);
+    background-color: transparent;
+    background-size: cover;
+    background-position: top;
+  }
+  .section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .section__fylo {
+    min-width: 30rem;
+  }
+  .section__storage {
+    margin-top: 2rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 0;
+    min-width: 30rem;
+  }
+  .section__storage__massage {
+    min-width: -webkit-max-content;
+    min-width: -moz-max-content;
+    min-width: max-content;
+    padding: 1rem 2rem;
+    top: 100%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .section__storage__massage > :first-child {
+    margin-right: 1rem;
+  }
+  .section__storage__massage::after {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 25em) {
+  html {
+    font-size: 50%;
+  }
+  .section > * {
+    width: 30rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
